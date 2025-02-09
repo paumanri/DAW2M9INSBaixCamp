@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+    <header>
+        <h1>One Piece (un)Official Site</h1>
+        <span><a href="index.html">Inici</a>  ||  <a href="index.html">Temporada anterior</a>  ||  <a href="">Joc de cartes</a></span>
+    </header>
+
+    <main>
+        <!-- Vídeo amb subtítols -->
+        <section>
+            <h2>Ja arriba la nova temporada!!</h2>
+            <video id="my-video" controls width="600">
+                <source src="video/trailerOnePiece.mp4" type="video/mp4">
+                <track class="subt" src="video/subtitols-ca.vtt" label="Català" kind="subtitles" srclang="es-cat" default>
+                <track class="subt" src="video/subtitols-es.vtt" label="Espanyol" kind="subtitles" srclang="es">
+                El teu navegador no admet vídeo HTML5.
+            </video>
+            <!-- Icones svg personalitzades per a iniciar i pausar -->
+            <div class="custom-controls">
+                <button id="play-pause">
+                    <!-- Icona de Play -->
+                    <svg id="play-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="#000"/>
+                    </svg>
+                    <!-- Icona de Pause -->
+                    <svg id="pause-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z" fill="#000"/>
+                    </svg>
+                </button>
+
+                <!-- Icones personalitzades per a activar o desactivar so -->
+                <button id="mute-unmute">
+                    <!-- Icona de megàfon (so activat) -->
+                    <svg id="unmute-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 10V14H7L12 19V5L7 10H3ZM16 12C16 10.23 14.84 8.74 13 8.18V10.31C13.85 10.93 14 12 14 12C14 12 13.85 13.07 13 13.69V15.82C14.84 15.26 16 13.77 16 12ZM19 12C19 8.13 15.87 5 12 5V7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17V19C15.87 19 19 15.87 19 12Z" fill="#000"/>
+                    </svg>
+                    <!-- Icona de megàfon tatxat (mute) -->
+                    <svg id="mute-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path d="M19 10V14H17V10H19ZM21 12C21 10.23 19.84 8.74 18 8.18V10.31C18.85 10.93 19 12 19 12C19 12 18.85 13.07 18 13.69V15.82C19.84 15.26 21 13.77 21 12ZM16 12C16 8.13 12.87 5 9 5V7C11.76 7 14 9.24 14 12C14 14.76 11.76 17 9 17V19C12.87 19 16 15.87 16 12ZM3 10V14H7L12 19V5L7 10H3Z" fill="#000"/>
+                        <line x1="2" y1="22" x2="22" y2="2" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+
+                <!-- Barra de so per a determinar el volum -->
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+
+                <!-- Icona de pantalla completa -->
+                <button id="fullscreen">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 14H5V19H10V17H7V14ZM5 10H7V7H10V5H5V10ZM17 17H14V19H19V14H17V17ZM14 5V7H17V10H19V5H14Z" fill="#000"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Reproductor d'àudio -->
+        <section>
+            <h2>Recupera la millor Banda Sonora de la sèrie</h2>
+            <audio controls id="audio-player">
+                <source src="audio/audioRuffy.mp3" type="audio/mp3">
+                <source src="audio/audioZoro.mp3" type="audio/mp3">
+                El teu navegador no admet àudio HTML5.
+            </audio>
+        </section>
+
+        <!-- Galeria d'imatges -->
+        <section>
+            <h2>Galeria d'Imatges</h2>
+            <div class="galeria">
+                <img src="img/onePiece1.webp" alt="Tripulació dels Barret de Palla">
+                <img src="img/onePiece2.webp" alt="Vegapunk">
+                <img src="img/onePiece3.png" alt="Jewelry Bonney">
+                <img src="img/onePiece4.jpg" alt="Gorosei">
+                <img src="img/onePiece5.webp" alt="Emeth">
+            </div>
+            <button id="zoom-in">Augmentar Mida</button>
+            <button id="zoom-out">Reduir Mida</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025</p>
+        <p>Per a més informació: <a href="https://www.youtube.com/watch?v=njxatFON6Zg&t=37s">Canal oficial</a>  ||  <a href="https://www.youtube.com/watch?v=uReN9RsKbic">Canal oficial ENG</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

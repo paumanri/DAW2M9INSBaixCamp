@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+video, audio {
+    margin-bottom: 20px;
+}
+
+/* Imatges */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Controls personalitzats */
+.custom-controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.custom-controls button:hover {
+    background-color: #555;
+}
+
+.custom-controls input[type="range"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+.custom-controls span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botons play // pause */
+#play-pause {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play-pause svg {
+    width: 24px;
+    height: 24px;
+    fill: #383838; /* Color de les icones */
+}
+
+#play-pause:hover svg {
+    fill: #000; /* Canvia el color al passar el ratolí */
+}
+
+/* Botons mute // unmute */
+#mute-unmute {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mute-unmute svg {
+    width: 24px;
+    height: 24px;
+    fill: #383838; /* Color de les icones */
+}
+
+#mute-unmute:hover svg {
+    fill: #000; /* Canvia el color al passar el ratolí */
+}
+
+/* Botó per a la pantalla completa */
+#fullscreen {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fullscreen svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Color de la icona */
+}
+
+#fullscreen:hover svg {
+    fill: #ccc; /* Canvia el color al passar el ratolí */
+} 
