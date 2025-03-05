@@ -1,0 +1,28 @@
+.subtitol {
+    font-size: 4vh;
+}
+
+/* Les imatges han de ser igual de grans i ocupar tota la columna */
+.fotos2024 {
+    width: calc(100% / 3);
+    height: auto;
+    object-fit: cover;
+}
+
+.cartells {
+    width: calc(100%);
+    height: auto;
+    object-fit: cover;
+}
+
+.form-label {
+    font-size: 4vh;
+}
+
+option, .form-control, .form-select, .form-check-input, .form-check-label {
+    font-size: 2.5vh;
+}
+
+.form-check-input {
+    margin-top: 1%;
+}
